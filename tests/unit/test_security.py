@@ -8,7 +8,7 @@ def test_hash_password_returns_hashed_value() -> None:
     password_hash = hash_password(raw_password)
 
     assert password_hash != raw_password
-    assert password_hash.startswith("$2")
+    assert "bcrypt" in password_hash
 
 
 def test_verify_password_returns_true_for_valid_password() -> None:
