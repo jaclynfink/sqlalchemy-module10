@@ -1,5 +1,3 @@
-"""Pydantic schemas for user input/output."""
-
 from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, EmailStr, Field
